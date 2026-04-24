@@ -26,8 +26,8 @@ const pains = [
 const Pain = () => (
   <section className="bg-[hsl(var(--bg-elevated))]">
     <div className="container py-10 sm:py-14 lg:py-20">
-      <SectionLabel>Você se identifica com isso?</SectionLabel>
-      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
+      <div className="flex justify-center"><SectionLabel>Você se identifica com isso?</SectionLabel></div>
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
         Se um desses cenários parece o seu — leia com atenção.
       </h2>
 

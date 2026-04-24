@@ -29,8 +29,8 @@ const Personas = () => (
     <div className="absolute inset-0 bg-[hsl(var(--green-deep))]" />
     <div className="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-gold/10 blur-3xl pointer-events-none" />
     <div className="container relative py-10 sm:py-14 lg:py-20">
-      <SectionLabel>Para quem é esta formação</SectionLabel>
-      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
+      <div className="flex justify-center"><SectionLabel>Para quem é esta formação</SectionLabel></div>
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
         3 perfis que <span className="text-gold-light">transformamos</span> todo mês.
       </h2>
 

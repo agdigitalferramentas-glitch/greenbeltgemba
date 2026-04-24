@@ -9,7 +9,7 @@ const cards = [
 const Mentorship = () => (
   <section className="bg-[hsl(var(--bg-elevated))]">
     <div className="container py-10 sm:py-14 lg:py-20">
-      <SectionLabel>Suporte exclusivo</SectionLabel>
+      <div className="flex justify-center"><SectionLabel>Suporte exclusivo</SectionLabel></div>
       <div className="mt-8 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
         <div>
           <h2 className="font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">

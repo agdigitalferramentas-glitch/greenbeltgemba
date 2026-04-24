@@ -24,9 +24,9 @@ const benefits = [
 const Benefits = () => (
   <section id="b-beneficios" className="bg-white">
     <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 sm:py-16">
-      <div className="b-section-bar mb-6">Benefícios</div>
+      <div className="b-section-bar mb-6 mx-auto w-fit">Benefícios</div>
       <h2
-        className="b-display b-underline leading-tight max-w-3xl"
+        className="b-display b-underline b-center leading-tight max-w-3xl mx-auto text-center"
         style={{ fontSize: "clamp(28px, 4vw, 44px)", color: "hsl(var(--b-text))" }}
       >
         O que você vai ganhar (além da certificação)
