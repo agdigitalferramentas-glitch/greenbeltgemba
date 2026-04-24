@@ -73,10 +73,12 @@ const Hero = () => (
         <div className="md:col-span-5 lg:col-span-4 flex justify-center md:justify-end order-first md:order-last">
           <img
             src={productLogo}
-            alt="Selo Green Belt Lean Six Sigma"
+            alt="Selo da certificação Green Belt Lean Six Sigma — Gemba Group"
             className="w-[180px] sm:w-[220px] md:w-full max-w-[260px] lg:max-w-[360px] h-auto animate-fade-up drop-shadow-[0_0_25px_rgba(80,220,120,0.25)]"
             width={1040}
             height={376}
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
       </div>
