@@ -10,12 +10,12 @@ const Mentorship = () => (
   <section className="bg-[hsl(var(--bg-elevated))]">
     <div className="container py-14 sm:py-20 lg:py-28">
       <SectionLabel>Suporte exclusivo</SectionLabel>
-      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div className="mt-8 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
         <div>
           <h2 className="font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
             Você não estará <span className="text-green-glow">sozinho</span> nessa jornada.
           </h2>
-          <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-5 sm:mt-6 text-sm sm:text-lg text-muted-foreground leading-relaxed">
             Além das aulas ao vivo, cada aluno tem acesso a mentorias individuais com consultores
             que atuam no campo — não apenas em sala de aula. São profissionais que já geraram
             resultados reais em empresas como as que você conhece. A mentoria garante que seu
@@ -27,12 +27,12 @@ const Mentorship = () => (
           {cards.map((c) => (
             <div
               key={c.title}
-              className="hover-lift rounded-xl border border-green-vibrant/30 bg-gradient-to-br from-green-deep/60 to-card/40 p-6 hover:border-green-vibrant/60"
+              className="hover-lift rounded-xl border border-green-vibrant/30 bg-gradient-to-br from-green-deep/60 to-card/40 p-5 sm:p-6 hover:border-green-vibrant/60"
             >
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-vibrant/15 text-green-glow text-xs font-semibold tracking-wide">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-vibrant/15 text-green-glow text-[11px] sm:text-xs font-semibold tracking-wide">
                 {c.badge}
               </div>
-              <h3 className="mt-3 font-display text-2xl text-foreground">{c.title}</h3>
+              <h3 className="mt-3 font-display text-xl sm:text-2xl text-foreground leading-tight">{c.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{c.text}</p>
             </div>
           ))}
