@@ -34,18 +34,18 @@ const Personas = () => (
         3 perfis que <span className="text-gold-light">transformamos</span> todo mês.
       </h2>
 
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
         {personas.map((p) => (
           <article
             key={p.title}
-            className="hover-lift rounded-xl border border-gold/30 bg-[hsl(var(--bg))]/60 backdrop-blur-sm p-7 hover:border-gold/60 shadow-card"
+            className="hover-lift rounded-xl border border-gold/30 bg-[hsl(var(--bg))]/60 backdrop-blur-sm p-6 sm:p-7 hover:border-gold/60 shadow-card"
           >
-            <div className="text-4xl mb-4" aria-hidden>{p.icon}</div>
-            <h3 className="font-display text-2xl text-foreground">{p.title}</h3>
-            <div className="text-xs mt-1 mb-5 text-gold tracking-wide">{p.role}</div>
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4" aria-hidden>{p.icon}</div>
+            <h3 className="font-display text-xl sm:text-2xl text-foreground leading-tight">{p.title}</h3>
+            <div className="text-[11px] sm:text-xs mt-1 mb-4 sm:mb-5 text-gold tracking-wide">{p.role}</div>
             <p className="text-sm text-muted-foreground leading-relaxed">{p.text}</p>
-            <div className="mt-6 pt-5 border-t border-gold/20 flex gap-2 items-start text-sm text-foreground/90">
-              <span className="text-green-glow font-bold">✓</span>
+            <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-gold/20 flex gap-2 items-start text-sm text-foreground/90">
+              <span className="text-green-glow font-bold flex-shrink-0">✓</span>
               <span className="italic">{p.win}</span>
             </div>
           </article>

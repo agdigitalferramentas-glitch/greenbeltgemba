@@ -43,22 +43,22 @@ const Modules = () => (
         8 Módulos. <span className="text-green-glow">Do zero à certificação.</span>
       </h2>
 
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="mt-10 sm:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         {modules.map((m) => (
           <article
             key={m.n}
-            className="hover-lift group relative overflow-hidden rounded-xl border border-border bg-card/50 p-6 hover:border-green-vibrant/60 hover:bg-card"
+            className="hover-lift group relative overflow-hidden rounded-xl border border-border bg-card/50 p-5 sm:p-6 hover:border-green-vibrant/60 hover:bg-card"
           >
-            <span className="font-display absolute -top-2 -right-1 text-[110px] leading-none text-green-vibrant/8 select-none group-hover:text-green-vibrant/15 transition-colors">
+            <span className="font-display absolute -top-2 -right-1 text-[90px] sm:text-[110px] leading-none text-green-vibrant/10 select-none group-hover:text-green-vibrant/20 transition-colors">
               {m.n}
             </span>
             <div className="relative">
               <div className="text-[11px] tracking-[0.2em] uppercase text-gold font-bold">{m.phase}</div>
-              <h3 className="mt-2 font-display text-2xl text-foreground leading-tight">{m.title}</h3>
-              <ul className="mt-5 space-y-2">
+              <h3 className="mt-2 font-display text-xl sm:text-2xl text-foreground leading-tight">{m.title}</h3>
+              <ul className="mt-4 sm:mt-5 space-y-2">
                 {m.items.map((it) => (
-                  <li key={it} className="flex gap-2 text-sm text-muted-foreground">
-                    <span className="text-green-vibrant mt-0.5">▸</span>
+                  <li key={it} className="flex gap-2 text-[13px] sm:text-sm text-muted-foreground">
+                    <span className="text-green-vibrant mt-0.5 flex-shrink-0">▸</span>
                     <span>{it}</span>
                   </li>
                 ))}
