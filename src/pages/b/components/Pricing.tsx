@@ -9,7 +9,7 @@ const includes = [
 
 const Pricing = () => (
   <section id="b-investimento" style={{ background: "hsl(var(--b-surface))" }}>
-    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-16 sm:py-24">
+    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 sm:py-16">
       <div className="text-center max-w-3xl mx-auto">
         <div className="inline-flex justify-center"><div className="b-section-bar mb-6">Investimento</div></div>
         <h2

@@ -11,7 +11,7 @@ const modules = [
 
 const Curriculum = () => (
   <section id="b-conteudo" style={{ background: "hsl(var(--b-surface))" }}>
-    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-16 sm:py-24">
+    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 sm:py-16">
       <div className="b-section-bar mb-6">Conteúdo do curso</div>
       <h2
         className="b-display b-underline leading-tight max-w-3xl"

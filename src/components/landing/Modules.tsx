@@ -37,7 +37,7 @@ const modules = [
 
 const Modules = () => (
   <section id="modules" className="bg-[hsl(var(--bg))]">
-    <div className="container py-14 sm:py-20 lg:py-28">
+    <div className="container py-10 sm:py-14 lg:py-20">
       <SectionLabel>Conteúdo completo</SectionLabel>
       <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
         8 Módulos. <span className="text-green-glow">Do zero à certificação.</span>

@@ -8,7 +8,7 @@ const FinalCTA = () => (
     <span className="b-asym-corner hidden md:block" style={{ top: 40, left: 40, borderColor: "white", opacity: 0.2, borderRight: "none", borderBottom: "none" }} />
     <span className="b-asym-corner hidden md:block" style={{ bottom: 40, right: 40, borderColor: "white", opacity: 0.2, borderLeft: "none", borderTop: "none" }} />
 
-    <div className="max-w-4xl mx-auto px-5 lg:px-8 py-20 sm:py-28 text-center">
+    <div className="max-w-4xl mx-auto px-5 lg:px-8 py-14 sm:py-20 text-center">
       <div className="inline-flex justify-center mb-6">
         <div
           className="b-section-bar"

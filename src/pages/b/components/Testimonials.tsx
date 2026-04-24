@@ -7,7 +7,7 @@ const testimonials = [
 
 const Testimonials = () => (
   <section className="bg-white">
-    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-16 sm:py-24">
+    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 sm:py-16">
       <div className="b-section-bar mb-6">Prova social</div>
       <h2
         className="b-display b-underline leading-tight max-w-3xl"
