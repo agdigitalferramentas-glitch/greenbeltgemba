@@ -25,7 +25,7 @@ const Hero = () => (
             color: "hsl(var(--b-text))",
           }}
         >
-          Destrabe sua carreira com{" "}
+          Destrave sua carreira com{" "}
           <span style={{ color: "hsl(var(--b-green))" }}>Green Belt Lean Six Sigma</span>
         </h1>
 
