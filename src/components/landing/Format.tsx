@@ -10,8 +10,8 @@ const items = [
 const Format = () => (
   <section className="bg-gradient-format">
     <div className="container py-10 sm:py-14 lg:py-20">
-      <SectionLabel>Como funciona</SectionLabel>
-      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
+      <div className="flex justify-center"><SectionLabel>Como funciona</SectionLabel></div>
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
         Formato pensado para <span className="text-green-glow">quem não pode parar.</span>
       </h2>
 

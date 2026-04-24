@@ -12,8 +12,8 @@ const numbers = [
 const SocialProof = () => (
   <section className="bg-[hsl(var(--bg-elevated))]">
     <div className="container py-10 sm:py-14 lg:py-20">
-      <SectionLabel>Números que comprovam</SectionLabel>
-      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
+      <div className="flex justify-center"><SectionLabel>Números que comprovam</SectionLabel></div>
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
         A Gemba Group <span className="text-green-glow">não promete.</span> Entrega resultados.
       </h2>
 
