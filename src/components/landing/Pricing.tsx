@@ -69,10 +69,10 @@ const Pricing = () => (
           </div>
 
           {/* Includes */}
-          <ul className="mt-8 space-y-3">
+          <ul className="mt-7 sm:mt-8 space-y-2.5 sm:space-y-3">
             {includes.map((i) => (
-              <li key={i.text} className="flex items-start gap-3 text-sm text-foreground/90">
-                <span className={i.star ? "text-gold" : "text-green-glow"}>{i.star ? "★" : "✓"}</span>
+              <li key={i.text} className="flex items-start gap-3 text-[13px] sm:text-sm text-foreground/90 leading-relaxed">
+                <span className={`flex-shrink-0 ${i.star ? "text-gold" : "text-green-glow"}`}>{i.star ? "★" : "✓"}</span>
                 <span>{i.text}</span>
               </li>
             ))}
@@ -81,12 +81,12 @@ const Pricing = () => (
           {/* CTA */}
           <a
             href="#"
-            className="btn-glow mt-8 flex items-center justify-center w-full px-6 py-5 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-lg shadow-glow"
+            className="btn-glow mt-7 sm:mt-8 flex items-center justify-center w-full px-4 sm:px-6 py-4 sm:py-5 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-base sm:text-lg shadow-glow text-center leading-tight"
           >
             Garantir minha vaga agora →
           </a>
 
-          <div className="mt-6 text-center text-xs text-muted-foreground tracking-wide">
+          <div className="mt-5 sm:mt-6 text-center text-[11px] sm:text-xs text-muted-foreground tracking-wide leading-relaxed">
             🔒 Ambiente seguro · Turma com vagas limitadas · Início em breve
           </div>
         </div>
