@@ -31,16 +31,16 @@ const Pain = () => (
         Se um desses cenários parece o seu — leia com atenção.
       </h2>
 
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         {pains.map((p) => (
           <div
             key={p.title}
-            className="hover-lift relative pl-6 pr-6 py-7 rounded-lg bg-card/40 border border-border hover:border-green-vibrant/50"
+            className="hover-lift relative pl-5 pr-5 py-6 sm:pl-6 sm:pr-6 sm:py-7 rounded-lg bg-card/40 border border-border hover:border-green-vibrant/50"
           >
-            <span className="absolute left-0 top-6 bottom-6 w-[3px] rounded-full bg-green-vibrant" />
-            <div className="text-3xl mb-3" aria-hidden>{p.icon}</div>
-            <h3 className="font-display text-2xl text-foreground mb-2">{p.title}</h3>
-            <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{p.text}</p>
+            <span className="absolute left-0 top-5 bottom-5 sm:top-6 sm:bottom-6 w-[3px] rounded-full bg-green-vibrant" />
+            <div className="text-2xl sm:text-3xl mb-2 sm:mb-3" aria-hidden>{p.icon}</div>
+            <h3 className="font-display text-xl sm:text-2xl text-foreground mb-2 leading-tight">{p.title}</h3>
+            <p className="text-muted-foreground leading-relaxed text-sm">{p.text}</p>
           </div>
         ))}
       </div>
