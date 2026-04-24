@@ -41,6 +41,31 @@ const SocialProof = () => (
           </div>
         ))}
       </div>
+
+      <div className="mt-16">
+        <div className="flex justify-center"><SectionLabel>Depoimentos em vídeo</SectionLabel></div>
+        <h3 className="mt-4 font-display text-2xl sm:text-3xl lg:text-4xl text-foreground max-w-3xl mx-auto text-center leading-tight">
+          Histórias reais de quem <span className="text-green-glow">transformou a carreira</span>
+        </h3>
+
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+          {videoTestimonials.map((id) => (
+            <div
+              key={id}
+              className="relative rounded-xl overflow-hidden border border-green-vibrant/25 bg-black aspect-video shadow-lg hover:border-green-vibrant/60 transition-colors"
+            >
+              <iframe
+                src={`https://www.youtube.com/embed/${id}`}
+                title={`Depoimento ${id}`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 );
