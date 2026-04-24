@@ -1,0 +1,66 @@
+const stats = [
+  { value: "+30mil", label: "Profissionais certificados" },
+  { value: "+1BI", label: "Em ganhos gerados" },
+  { value: "17 anos", label: "Líderes no mercado" },
+  { value: "+1500", label: "Projetos certificados" },
+];
+
+const Hero = () => (
+  <section className="relative overflow-hidden bg-gradient-hero">
+    <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" />
+    <div className="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-green-vibrant/15 blur-3xl pointer-events-none" />
+
+    <div className="container relative pt-16 sm:pt-24 pb-20 sm:pb-28">
+      {/* Badge */}
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-vibrant/40 bg-green-deep/60 backdrop-blur-sm text-xs sm:text-sm font-semibold tracking-wider uppercase animate-fade-up">
+        <span className="w-2 h-2 rounded-full bg-green-glow pulse-dot" />
+        <span className="text-foreground/90">Gemba Group &amp; Produzzi — Referência Nacional</span>
+      </div>
+
+      {/* Title */}
+      <h1
+        className="font-display mt-8 leading-[0.92] tracking-tight animate-fade-up"
+        style={{ fontSize: "clamp(52px, 11vw, 110px)" }}
+      >
+        <span className="block text-foreground">Green Belt</span>
+        <span className="block text-green-vibrant text-glow">LEAN SIX SIGMA</span>
+        <span className="block text-gold-light">Formação</span>
+      </h1>
+
+      {/* Subtitle */}
+      <p className="mt-8 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed animate-fade-up">
+        A certificação que transforma profissionais em agentes de resultado.
+        Domine o método usado pelas maiores multinacionais do mundo e destrave
+        a promoção, o aumento ou o impacto que você merece.
+      </p>
+
+      {/* CTAs */}
+      <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+        <a
+          href="#pricing"
+          className="btn-glow inline-flex items-center justify-center px-8 py-4 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-base shadow-glow"
+        >
+          Quero me inscrever agora →
+        </a>
+        <a
+          href="#modules"
+          className="text-foreground/85 hover:text-green-glow transition-colors text-sm font-semibold tracking-wide border-b border-green-vibrant/40 hover:border-green-glow pb-1"
+        >
+          Ver conteúdo completo
+        </a>
+      </div>
+
+      {/* Stats */}
+      <div className="mt-16 sm:mt-20 pt-8 border-t border-green-vibrant/15 grid grid-cols-2 lg:grid-cols-4 gap-8">
+        {stats.map((s) => (
+          <div key={s.label} className="space-y-1">
+            <div className="font-display text-3xl sm:text-4xl text-green-glow">{s.value}</div>
+            <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+export default Hero;
