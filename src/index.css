@@ -1,96 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&family=Lora:ital@1&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Gemba Group — Green Belt Lean Six Sigma Design System
+   Dark premium, industrial-refined. All HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Greens */
+    --bg: 140 30% 4%;                 /* #060d08 */
+    --bg-elevated: 138 22% 5%;        /* #080f0a */
+    --bg-card: 140 25% 7%;
+    --green-deep: 145 52% 10%;        /* #0d2818 */
+    --green-mid: 145 48% 20%;         /* #1a4a2e */
+    --green-vibrant: 145 50% 45%;     /* #3aad6e */
+    --green-glow: 145 53% 55%;        /* #52c98a */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Gold */
+    --gold: 43 55% 54%;               /* #c9a84c */
+    --gold-light: 43 82% 69%;         /* #f0cc70 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Text */
+    --text-primary: 60 18% 95%;       /* #f5f5f0 */
+    --text-muted: 48 11% 76%;         /* #c8c4b8 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Shadcn semantic mappings */
+    --background: var(--bg);
+    --foreground: var(--text-primary);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --card: var(--bg-card);
+    --card-foreground: var(--text-primary);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: var(--bg-card);
+    --popover-foreground: var(--text-primary);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--green-vibrant);
+    --primary-foreground: 140 30% 4%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --secondary: var(--green-deep);
+    --secondary-foreground: var(--text-primary);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --muted: 140 18% 12%;
+    --muted-foreground: var(--text-muted);
 
-    --radius: 0.5rem;
+    --accent: var(--gold);
+    --accent-foreground: 140 30% 4%;
 
-    --sidebar-background: 0 0% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 98%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --border: 145 30% 14%;
+    --input: 145 30% 14%;
+    --ring: var(--green-vibrant);
 
-    --sidebar-primary: 240 5.9% 10%;
+    --radius: 0.75rem;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Gradients */
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(var(--green-vibrant) / 0.18), transparent 60%), linear-gradient(180deg, hsl(var(--green-deep)), hsl(var(--bg)));
+    --gradient-promise: linear-gradient(180deg, hsl(var(--green-deep)), hsl(var(--bg)));
+    --gradient-format: linear-gradient(180deg, hsl(var(--green-deep)), hsl(var(--bg-elevated)));
+    --gradient-pricing: radial-gradient(ellipse at center, hsl(var(--green-mid) / 0.4), hsl(var(--bg)) 70%);
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    /* Shadows */
+    --shadow-glow: 0 10px 40px -10px hsl(var(--green-vibrant) / 0.5);
+    --shadow-card: 0 4px 24px -8px hsl(140 50% 2% / 0.6);
+    --shadow-deep: 0 20px 60px -20px hsl(140 60% 1% / 0.8);
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar (unused but kept) */
+    --sidebar-background: var(--bg);
+    --sidebar-foreground: var(--text-primary);
+    --sidebar-primary: var(--green-vibrant);
+    --sidebar-primary-foreground: 140 30% 4%;
+    --sidebar-accent: var(--green-deep);
+    --sidebar-accent-foreground: var(--text-primary);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--green-vibrant);
   }
 }
 
@@ -98,8 +85,64 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: hsl(var(--green-vibrant) / 0.35);
+    color: hsl(var(--text-primary));
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.01em;
+  }
+  .font-body {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+  .font-quote {
+    font-family: 'Lora', serif;
+    font-style: italic;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--green-vibrant) / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--green-vibrant) / 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 24px hsl(var(--green-glow) / 0.45);
+  }
+
+  .pulse-dot {
+    animation: pulse-dot 1.8s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 hsl(var(--green-glow) / 0.6); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 8px hsl(var(--green-glow) / 0); }
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  .btn-glow {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  }
+  .btn-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px -8px hsl(var(--green-vibrant) / 0.55);
   }
 }
