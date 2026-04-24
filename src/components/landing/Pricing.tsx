@@ -37,32 +37,32 @@ const Pricing = () => (
         </div>
 
         {/* Price options */}
-        <div className="px-7 sm:px-9 py-8">
-          <div className="rounded-xl border border-green-vibrant/40 bg-green-vibrant/5 p-6">
-            <div className="flex items-center justify-between gap-3 flex-wrap">
+        <div className="px-5 sm:px-9 py-7 sm:py-8">
+          <div className="rounded-xl border border-green-vibrant/40 bg-green-vibrant/5 p-5 sm:p-6">
+            <div className="flex items-start justify-between gap-3 flex-wrap">
               <div>
-                <div className="text-xs uppercase tracking-wider text-green-glow font-bold">À vista — 5% de desconto</div>
-                <div className="font-display text-5xl sm:text-6xl text-foreground mt-1">R$ 2.755<span className="text-2xl text-muted-foreground">,00</span></div>
+                <div className="text-[11px] sm:text-xs uppercase tracking-wider text-green-glow font-bold">À vista — 5% de desconto</div>
+                <div className="font-display text-[40px] sm:text-6xl text-foreground mt-1 leading-none">R$ 2.755<span className="text-xl sm:text-2xl text-muted-foreground">,00</span></div>
               </div>
-              <div className="text-sm text-muted-foreground max-w-[200px] text-right">
+              <div className="text-xs sm:text-sm text-muted-foreground sm:max-w-[200px] sm:text-right">
                 Você economiza <strong className="text-gold">R$ 145,00</strong> pagando à vista
               </div>
             </div>
           </div>
 
-          <div className="my-6 flex items-center gap-4">
+          <div className="my-5 sm:my-6 flex items-center gap-4">
             <span className="flex-1 h-px bg-border" />
             <span className="text-xs uppercase tracking-widest text-muted-foreground">ou</span>
             <span className="flex-1 h-px bg-border" />
           </div>
 
-          <div className="rounded-xl border border-border p-6">
-            <div className="flex items-center justify-between gap-3 flex-wrap">
+          <div className="rounded-xl border border-border p-5 sm:p-6">
+            <div className="flex items-start justify-between gap-3 flex-wrap">
               <div>
-                <div className="text-xs uppercase tracking-wider text-muted-foreground font-bold">Parcelado sem juros</div>
-                <div className="font-display text-4xl sm:text-5xl text-foreground mt-1">6x R$ 483<span className="text-xl text-muted-foreground">,33</span></div>
+                <div className="text-[11px] sm:text-xs uppercase tracking-wider text-muted-foreground font-bold">Parcelado sem juros</div>
+                <div className="font-display text-[34px] sm:text-5xl text-foreground mt-1 leading-none">6x R$ 483<span className="text-lg sm:text-xl text-muted-foreground">,33</span></div>
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-xs sm:text-sm text-muted-foreground">
                 Total <strong className="text-foreground">R$ 2.900,00</strong> · sem acréscimos
               </div>
             </div>
