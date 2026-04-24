@@ -29,7 +29,7 @@ const Index = () => {
       <FAQ />
       <FinalCTA />
       <Footer />
-      <StickyBar />
+      
     </main>
   );
 };
