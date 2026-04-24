@@ -22,16 +22,16 @@ const Pricing = () => (
         </h2>
       </div>
 
-      <div className="mt-14 max-w-[700px] mx-auto rounded-2xl border-2 border-green-vibrant/40 bg-card shadow-deep overflow-hidden">
+      <div className="mt-10 sm:mt-14 max-w-[700px] mx-auto rounded-2xl border-2 border-green-vibrant/40 bg-card shadow-deep overflow-hidden">
         {/* Header */}
-        <div className="px-7 sm:px-9 py-7 border-b border-border flex items-start justify-between gap-4 flex-wrap">
+        <div className="px-5 sm:px-9 py-5 sm:py-7 border-b border-border flex items-start justify-between gap-3 flex-wrap">
           <div>
-            <div className="text-xs tracking-[0.2em] uppercase text-green-glow font-bold">Formação</div>
-            <h3 className="mt-1 font-display text-2xl sm:text-3xl text-foreground leading-tight">
+            <div className="text-[11px] sm:text-xs tracking-[0.2em] uppercase text-green-glow font-bold">Formação</div>
+            <h3 className="mt-1 font-display text-xl sm:text-3xl text-foreground leading-tight">
               Green Belt Lean Six Sigma
             </h3>
           </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold/15 border border-gold/40 text-gold text-xs font-bold tracking-wide">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-gold/15 border border-gold/40 text-gold text-[10px] sm:text-xs font-bold tracking-wide">
             🔒 Vagas Limitadas
           </div>
         </div>
