@@ -71,7 +71,7 @@ const FAQ = () => {
                   style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-muted-foreground leading-relaxed">{f.a}</p>
+                    <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-muted-foreground leading-relaxed">{f.a}</p>
                   </div>
                 </div>
               </div>
