@@ -55,6 +55,13 @@
   background: hsl(var(--b-green));
   border-radius: 2px;
 }
+.b-theme .b-underline.b-center {
+  display: block;
+}
+.b-theme .b-underline.b-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .b-theme .b-btn {
   display: inline-flex;
