@@ -1,4 +1,5 @@
 import SectionLabel from "./SectionLabel";
+import VideoLightbox from "@/components/VideoLightbox";
 
 const videoTestimonials = [
   "wJQeUW8ZQQA",
