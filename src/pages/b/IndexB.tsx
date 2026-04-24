@@ -27,7 +27,7 @@ const IndexB = () => {
 
     // Update SEO meta for this page
     const prevTitle = document.title;
-    document.title = "Green Belt Lean Six Sigma — Destrabe sua carreira | Gemba Group";
+    document.title = "Green Belt Lean Six Sigma — Destrave sua carreira | Gemba Group";
     return () => {
       document.title = prevTitle;
     };
