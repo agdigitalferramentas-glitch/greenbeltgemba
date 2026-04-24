@@ -1,3 +1,6 @@
+import productLogo from "@/assets/logo-greenbelt-product.png";
+import heroBg from "@/assets/hero-bg-team.jpg";
+
 const stats = [
   { value: "+30mil", label: "Profissionais certificados" },
   { value: "+1BI", label: "Em ganhos gerados" },
@@ -7,7 +10,14 @@ const stats = [
 
 const Hero = () => (
   <section className="relative overflow-hidden bg-gradient-hero">
-    <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" />
+    {/* Background photo with strong overlay */}
+    <div
+      className="absolute inset-0 bg-cover bg-center opacity-25 pointer-events-none"
+      style={{ backgroundImage: `url(${heroBg})` }}
+      aria-hidden
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--green-deep))]/85 via-[hsl(var(--green-deep))]/70 to-[hsl(var(--green-deep))] pointer-events-none" />
+    <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
     <div className="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-green-vibrant/15 blur-3xl pointer-events-none" />
 
     <div className="container relative pt-10 sm:pt-20 pb-16 sm:pb-28">
@@ -17,15 +27,27 @@ const Hero = () => (
         <span className="text-foreground/90 truncate">Gemba Group — Referência Nacional</span>
       </div>
 
+      {/* Product logo */}
+      <img
+        src={productLogo}
+        alt="Green Belt Lean Six Sigma"
+        className="mt-8 sm:mt-10 w-full max-w-[640px] h-auto animate-fade-up"
+        width={1040}
+        height={376}
+      />
+
       {/* Title */}
       <h1
-        className="font-display mt-6 sm:mt-8 leading-[0.92] tracking-tight animate-fade-up"
-        style={{ fontSize: "clamp(44px, 11vw, 110px)" }}
+        className="font-display mt-6 leading-[0.92] tracking-tight animate-fade-up sr-only"
       >
-        <span className="block text-foreground">Green Belt</span>
-        <span className="block text-green-vibrant text-glow">LEAN SIX SIGMA</span>
-        <span className="block text-gold-light">Formação</span>
+        Green Belt Lean Six Sigma — Formação
       </h1>
+      <p
+        className="font-display mt-4 sm:mt-6 text-gold-light leading-none tracking-tight animate-fade-up"
+        style={{ fontSize: "clamp(36px, 8vw, 80px)" }}
+      >
+        Formação
+      </p>
 
       {/* Subtitle */}
       <p className="mt-6 sm:mt-8 max-w-2xl text-sm sm:text-lg text-muted-foreground leading-relaxed animate-fade-up">
