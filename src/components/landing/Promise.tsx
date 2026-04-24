@@ -5,7 +5,7 @@ const Promise = () => (
     <div className="container py-10 sm:py-14 lg:py-20">
       <div className="flex justify-center"><SectionLabel>A transformação que você vai viver</SectionLabel></div>
       <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
-        Não é um curso. <span className="text-green-glow">É um ponto de virada</span> na sua carreira.
+        O <span className="text-green-glow">ponto de virada</span> da sua carreira começa aqui.
       </h2>
 
       <div className="relative mt-10 sm:mt-14 max-w-4xl">
