@@ -6,8 +6,6 @@ const Footer = () => (
           <span className="b-display text-xl" style={{ color: "hsl(150 50% 70%)" }}>
             Gemba<span className="text-white">Group</span>
           </span>
-          <span className="text-white/30">|</span>
-          <span className="b-display text-xl">Produzzi</span>
         </div>
         <p className="text-sm text-white/70 leading-relaxed">
           Transformando carreiras desde 2007. 30 mil profissionais formados,
@@ -46,7 +44,7 @@ const Footer = () => (
 
     <div className="border-t border-white/10">
       <div className="max-w-7xl mx-auto px-5 lg:px-8 py-5 text-xs text-white/50 text-center">
-        © 2025 Gemba Group + Produzzi. Todos os direitos reservados.
+        © 2025 Gemba Group. Todos os direitos reservados.
       </div>
     </div>
   </footer>

@@ -14,7 +14,7 @@ const Hero = () => (
       {/* Badge */}
       <div className="inline-flex max-w-full items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-green-vibrant/40 bg-green-deep/60 backdrop-blur-sm text-[10px] sm:text-sm font-semibold tracking-wider uppercase animate-fade-up">
         <span className="w-2 h-2 flex-shrink-0 rounded-full bg-green-glow pulse-dot" />
-        <span className="text-foreground/90 truncate">Gemba Group &amp; Produzzi — Referência Nacional</span>
+        <span className="text-foreground/90 truncate">Gemba Group — Referência Nacional</span>
       </div>
 
       {/* Title */}
