@@ -21,15 +21,15 @@ const SocialProof = () => (
         {numbers.map((n, i) => (
           <div
             key={n.l}
-            className={`p-8 sm:p-10 text-center transition-colors hover:bg-green-vibrant/5
+            className={`p-6 sm:p-10 text-center transition-colors hover:bg-green-vibrant/5
               ${i % 3 !== 2 ? "md:border-r md:border-green-vibrant/20" : ""}
               ${i % 2 === 0 ? "border-r md:border-r" : ""}
               ${i < numbers.length - 2 ? "border-b border-green-vibrant/20" : ""}
               ${i < numbers.length - 3 ? "md:border-b md:border-green-vibrant/20" : "md:border-b-0"}
             `}
           >
-            <div className="font-display text-5xl sm:text-6xl text-green-glow text-glow">{n.v}</div>
-            <div className="mt-3 text-xs sm:text-sm text-muted-foreground uppercase tracking-wider">{n.l}</div>
+            <div className="font-display text-4xl sm:text-6xl text-green-glow text-glow leading-none">{n.v}</div>
+            <div className="mt-2 sm:mt-3 text-[10px] sm:text-sm text-muted-foreground uppercase tracking-wider leading-tight">{n.l}</div>
           </div>
         ))}
       </div>
