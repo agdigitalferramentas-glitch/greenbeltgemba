@@ -1,3 +1,5 @@
+import VideoLightbox from "@/components/VideoLightbox";
+
 const videoIds = [
   "wJQeUW8ZQQA",
   "cnA_jrJDcRU",
@@ -17,23 +19,8 @@ const Testimonials = () => (
         O que dizem nossos alunos
       </h2>
 
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-        {videoIds.map((id) => (
-          <div
-            key={id}
-            className="relative rounded-xl overflow-hidden bg-black aspect-video shadow-md b-card"
-            style={{ padding: 0 }}
-          >
-            <iframe
-              src={`https://www.youtube.com/embed/${id}`}
-              title={`Depoimento ${id}`}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
-            />
-          </div>
-        ))}
+      <div className="mt-12">
+        <VideoLightbox videoIds={videoIds} />
       </div>
     </div>
   </section>
