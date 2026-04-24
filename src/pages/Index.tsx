@@ -11,11 +11,11 @@ import Pricing from "@/components/landing/Pricing";
 import FAQ from "@/components/landing/FAQ";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
-import StickyBar from "@/components/landing/StickyBar";
+
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground pb-32 sm:pb-20">
+    <main className="min-h-screen bg-background text-foreground">
       <UrgencyBar />
       <Hero />
       <Pain />
@@ -29,7 +29,7 @@ const Index = () => {
       <FAQ />
       <FinalCTA />
       <Footer />
-      <StickyBar />
+      
     </main>
   );
 };
