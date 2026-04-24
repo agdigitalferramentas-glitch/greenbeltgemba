@@ -86,17 +86,6 @@ const Hero = () => (
         ))}
       </div>
     </div>
-
-      {/* Stats */}
-      <div className="mt-12 sm:mt-20 pt-6 sm:pt-8 border-t border-green-vibrant/15 grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-        {stats.map((s) => (
-          <div key={s.label} className="space-y-1">
-            <div className="font-display text-2xl sm:text-4xl text-green-glow">{s.value}</div>
-            <div className="text-[10px] sm:text-sm text-muted-foreground uppercase tracking-wider leading-tight">{s.label}</div>
-          </div>
-        ))}
-      </div>
-    </div>
   </section>
 );
 
