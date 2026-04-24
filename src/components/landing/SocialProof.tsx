@@ -49,22 +49,11 @@ const SocialProof = () => (
           Histórias reais de quem <span className="text-green-glow">transformou a carreira</span>
         </h3>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-          {videoTestimonials.map((id) => (
-            <div
-              key={id}
-              className="relative rounded-xl overflow-hidden border border-green-vibrant/25 bg-black aspect-video shadow-lg hover:border-green-vibrant/60 transition-colors"
-            >
-              <iframe
-                src={`https://www.youtube.com/embed/${id}`}
-                title={`Depoimento ${id}`}
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-              />
-            </div>
-          ))}
+        <div className="mt-10">
+          <VideoLightbox
+            videoIds={videoTestimonials}
+            cardClassName="border border-green-vibrant/25 hover:border-green-vibrant/60 transition-colors"
+          />
         </div>
       </div>
     </div>
