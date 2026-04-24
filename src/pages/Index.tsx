@@ -15,7 +15,7 @@ import StickyBar from "@/components/landing/StickyBar";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground pb-20 sm:pb-16">
+    <main className="min-h-screen bg-background text-foreground pb-32 sm:pb-20">
       <UrgencyBar />
       <Hero />
       <Pain />
