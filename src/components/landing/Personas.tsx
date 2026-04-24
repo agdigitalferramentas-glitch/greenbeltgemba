@@ -28,24 +28,24 @@ const Personas = () => (
   <section className="relative overflow-hidden bg-green-mid/40">
     <div className="absolute inset-0 bg-[hsl(var(--green-deep))]" />
     <div className="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-gold/10 blur-3xl pointer-events-none" />
-    <div className="container relative py-20 sm:py-28">
+    <div className="container relative py-14 sm:py-20 lg:py-28">
       <SectionLabel>Para quem é esta formação</SectionLabel>
-      <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
         3 perfis que <span className="text-gold-light">transformamos</span> todo mês.
       </h2>
 
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
         {personas.map((p) => (
           <article
             key={p.title}
-            className="hover-lift rounded-xl border border-gold/30 bg-[hsl(var(--bg))]/60 backdrop-blur-sm p-7 hover:border-gold/60 shadow-card"
+            className="hover-lift rounded-xl border border-gold/30 bg-[hsl(var(--bg))]/60 backdrop-blur-sm p-6 sm:p-7 hover:border-gold/60 shadow-card"
           >
-            <div className="text-4xl mb-4" aria-hidden>{p.icon}</div>
-            <h3 className="font-display text-2xl text-foreground">{p.title}</h3>
-            <div className="text-xs mt-1 mb-5 text-gold tracking-wide">{p.role}</div>
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4" aria-hidden>{p.icon}</div>
+            <h3 className="font-display text-xl sm:text-2xl text-foreground leading-tight">{p.title}</h3>
+            <div className="text-[11px] sm:text-xs mt-1 mb-4 sm:mb-5 text-gold tracking-wide">{p.role}</div>
             <p className="text-sm text-muted-foreground leading-relaxed">{p.text}</p>
-            <div className="mt-6 pt-5 border-t border-gold/20 flex gap-2 items-start text-sm text-foreground/90">
-              <span className="text-green-glow font-bold">✓</span>
+            <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-gold/20 flex gap-2 items-start text-sm text-foreground/90">
+              <span className="text-green-glow font-bold flex-shrink-0">✓</span>
               <span className="italic">{p.win}</span>
             </div>
           </article>

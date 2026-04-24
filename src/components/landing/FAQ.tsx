@@ -33,15 +33,15 @@ const FAQ = () => {
 
   return (
     <section className="bg-[hsl(var(--bg-elevated))]">
-      <div className="container py-20 sm:py-28">
+      <div className="container py-14 sm:py-20 lg:py-28">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex"><SectionLabel>Perguntas frequentes</SectionLabel></div>
-          <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+          <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
             Ainda tem dúvidas? <span className="text-green-glow">A gente responde.</span>
           </h2>
         </div>
 
-        <div className="mt-12 max-w-[800px] mx-auto space-y-3">
+        <div className="mt-10 sm:mt-12 max-w-[800px] mx-auto space-y-3">
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
@@ -53,12 +53,12 @@ const FAQ = () => {
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-6 px-6 py-5 text-left"
+                  className="w-full flex items-center justify-between gap-4 sm:gap-6 px-5 py-4 sm:px-6 sm:py-5 text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-semibold text-base sm:text-lg text-foreground">{f.q}</span>
+                  <span className="font-semibold text-sm sm:text-lg text-foreground leading-snug">{f.q}</span>
                   <span
-                    className={`flex-shrink-0 w-8 h-8 rounded-full border border-green-vibrant/40 flex items-center justify-center text-green-glow transition-transform duration-300 ${
+                    className={`flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-green-vibrant/40 flex items-center justify-center text-green-glow transition-transform duration-300 ${
                       isOpen ? "rotate-45 bg-green-vibrant/10" : ""
                     }`}
                     aria-hidden
@@ -71,7 +71,7 @@ const FAQ = () => {
                   style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-muted-foreground leading-relaxed">{f.a}</p>
+                    <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-muted-foreground leading-relaxed">{f.a}</p>
                   </div>
                 </div>
               </div>
