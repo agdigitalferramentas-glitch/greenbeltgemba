@@ -10,11 +10,16 @@ const stats = [
 
 const Hero = () => (
   <section className="relative overflow-hidden bg-gradient-hero min-h-[88vh] md:min-h-[92vh] lg:min-h-[88vh] flex flex-col">
-    {/* Background photo with strong overlay */}
-    <div
-      className="absolute inset-0 bg-cover bg-center opacity-25 pointer-events-none"
-      style={{ backgroundImage: `url(${heroBg})` }}
-      aria-hidden
+    {/* Background photo with strong overlay (LCP candidate — preloaded as <img>) */}
+    <img
+      src={heroBg}
+      alt=""
+      aria-hidden="true"
+      width={1920}
+      height={1280}
+      fetchPriority="high"
+      decoding="async"
+      className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
     />
     <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--green-deep))]/85 via-[hsl(var(--green-deep))]/70 to-[hsl(var(--green-deep))] pointer-events-none" />
     <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
