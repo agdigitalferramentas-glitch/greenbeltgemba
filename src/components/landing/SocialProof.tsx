@@ -1,5 +1,13 @@
 import SectionLabel from "./SectionLabel";
 
+const videoTestimonials = [
+  "wJQeUW8ZQQA",
+  "cnA_jrJDcRU",
+  "YhS3Fz6iEYk",
+  "mCfsnekzJ0o",
+  "VRcPrcZigHM",
+];
+
 const numbers = [
   { v: "+30k", l: "Profissionais capacitados em todo o Brasil" },
   { v: "+1Bi", l: "Em ganhos gerados pelos nossos alunos" },
