@@ -33,10 +33,10 @@ const FAQ = () => {
 
   return (
     <section className="bg-[hsl(var(--bg-elevated))]">
-      <div className="container py-20 sm:py-28">
+      <div className="container py-14 sm:py-20 lg:py-28">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex"><SectionLabel>Perguntas frequentes</SectionLabel></div>
-          <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+          <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
             Ainda tem dúvidas? <span className="text-green-glow">A gente responde.</span>
           </h2>
         </div>

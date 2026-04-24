@@ -8,11 +8,11 @@ const cards = [
 
 const Mentorship = () => (
   <section className="bg-[hsl(var(--bg-elevated))]">
-    <div className="container py-20 sm:py-28">
+    <div className="container py-14 sm:py-20 lg:py-28">
       <SectionLabel>Suporte exclusivo</SectionLabel>
       <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <div>
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+          <h2 className="font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
             Você não estará <span className="text-green-glow">sozinho</span> nessa jornada.
           </h2>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
