@@ -32,13 +32,6 @@ const Header = () => {
           >
             Gemba<span style={{ color: "hsl(var(--b-text))" }}>Group</span>
           </span>
-          <span style={{ color: "hsl(var(--b-border))" }}>|</span>
-          <span
-            className="b-display text-lg sm:text-xl"
-            style={{ color: "hsl(var(--b-text))" }}
-          >
-            Produzzi
-          </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
