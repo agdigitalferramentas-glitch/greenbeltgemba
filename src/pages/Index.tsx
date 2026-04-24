@@ -15,7 +15,7 @@ import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground pb-32 sm:pb-20">
+    <main className="min-h-screen bg-background text-foreground">
       <UrgencyBar />
       <Hero />
       <Pain />
