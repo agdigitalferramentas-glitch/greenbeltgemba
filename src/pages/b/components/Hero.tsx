@@ -63,8 +63,13 @@ const Hero = () => (
 
       {/* Image with green overlay */}
       <div className="lg:col-span-5 relative b-fade-up">
-        <div className="b-img-overlay aspect-[4/5] sm:aspect-[5/6] shadow-xl">
+        <div className="b-img-overlay aspect-[4/5] sm:aspect-[5/6] shadow-xl relative">
           <img src={heroImg} alt="Profissionais analisando resultados de projeto Lean Six Sigma" width={1280} height={1280} />
+          <img
+            src={productLogo}
+            alt="Green Belt Lean Six Sigma"
+            className="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-10 w-[78%] max-w-[360px] h-auto drop-shadow-2xl z-10 pointer-events-none"
+          />
         </div>
         {/* Floating stat card */}
         <div
