@@ -1,12 +1,16 @@
+import gembaLogo from "@/assets/gemba-logo.png";
+
 const Footer = () => (
   <footer style={{ background: "hsl(var(--b-text))", color: "white" }}>
     <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 sm:py-14 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
-        <div className="flex items-center gap-2 mb-3">
-          <span className="b-display text-xl" style={{ color: "hsl(150 50% 70%)" }}>
-            Gemba<span className="text-white">Group</span>
-          </span>
-        </div>
+        <img
+          src={gembaLogo}
+          alt="Gemba Group"
+          className="h-12 sm:h-14 w-auto mb-4"
+          loading="lazy"
+        />
+
         <p className="text-sm text-white/70 leading-relaxed">
           Transformando carreiras desde 2007. 30 mil profissionais formados,
           R$ 1 bilhão em resultados gerados.
