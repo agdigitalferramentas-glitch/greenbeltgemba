@@ -22,7 +22,7 @@ const Pricing = () => (
         </h2>
       </div>
 
-      <div className="mt-10 sm:mt-14 max-w-[700px] mx-auto rounded-2xl border-2 border-green-vibrant/40 bg-card shadow-deep overflow-hidden">
+      <div className="mt-10 sm:mt-14 max-w-[700px] mx-auto rounded-2xl border-2 border-green-vibrant/40 bg-card shadow-deep">
         {/* Header */}
         <div className="px-5 sm:px-9 py-5 sm:py-7 border-b border-border flex items-start justify-between gap-3 flex-wrap">
           <div>
