@@ -10,7 +10,7 @@ const points = [
 
 const Authority = () => (
   <section className="bg-white">
-    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div className="lg:col-span-5 order-2 lg:order-1">
         <div className="b-img-overlay aspect-[4/3] shadow-xl">
           <img src={authImg} alt="Equipe de consultores analisando resultados de projetos Lean Six Sigma" loading="lazy" width={1280} height={896} />

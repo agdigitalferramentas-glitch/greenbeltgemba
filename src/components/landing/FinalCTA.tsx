@@ -2,7 +2,7 @@ const FinalCTA = () => (
   <section className="relative overflow-hidden bg-green-mid">
     <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[hsl(var(--bg))]/40 pointer-events-none" />
-    <div className="container relative py-16 sm:py-24 lg:py-32 text-center">
+    <div className="container relative py-12 sm:py-16 lg:py-24 text-center">
       <div className="max-w-[700px] mx-auto">
         <h2 className="font-display text-[38px] sm:text-6xl lg:text-7xl text-foreground leading-[0.95]">
           Sua carreira muda quando <span className="text-gold-light">você decide mudar.</span>

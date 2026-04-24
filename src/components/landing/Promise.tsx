@@ -2,7 +2,7 @@ import SectionLabel from "./SectionLabel";
 
 const Promise = () => (
   <section className="bg-gradient-promise">
-    <div className="container py-14 sm:py-20 lg:py-28">
+    <div className="container py-10 sm:py-14 lg:py-20">
       <SectionLabel>A transformação que você vai viver</SectionLabel>
       <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl leading-tight">
         Não é um curso. <span className="text-green-glow">É um ponto de virada</span> na sua carreira.
