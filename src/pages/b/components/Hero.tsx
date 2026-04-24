@@ -1,4 +1,6 @@
 import heroImg from "@/assets/b/hero-team.jpg";
+import productLogo from "@/assets/logo-greenbelt-product.png";
+
 
 const stats = [
   { v: "30K+", l: "Profissionais formados" },
