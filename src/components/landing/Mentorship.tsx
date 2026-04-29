@@ -11,14 +11,14 @@ const Mentorship = () => (
       <div className="flex justify-center"><SectionLabel>Suporte exclusivo</SectionLabel></div>
       <div className="mt-8 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
         <div>
-          <h2 className="font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
-            Você não estará <span className="text-green-glow">sozinho</span> nessa jornada.
+          <h2 className="font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight text-balance">
+            Você não estará <span className="text-green-glow">sozinho</span> nessa&nbsp;jornada.
           </h2>
           <p className="mt-5 sm:mt-6 text-sm sm:text-lg text-muted-foreground leading-relaxed">
             Além das aulas ao vivo, cada aluno tem acesso a mentorias individuais com consultores
             que atuam no campo — não apenas em sala de aula. São profissionais que já geraram
             resultados reais em empresas como as que você conhece. A mentoria garante que seu
-            projeto evolua com segurança, fase a fase, sem travar no caminho.
+            projeto evolua com segurança, fase a fase, sem travar no&nbsp;caminho.
           </p>
         </div>
 

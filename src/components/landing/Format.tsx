@@ -12,8 +12,8 @@ const Format = () => (
   <section className="bg-gradient-format">
     <div className="container py-10 sm:py-14 lg:py-20">
       <div className="flex justify-center"><SectionLabel>Como funciona</SectionLabel></div>
-      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
-        Formato pensado para <span className="text-green-glow">quem não pode parar.</span>
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight text-balance">
+        Formato pensado para <span className="text-green-glow">quem não pode&nbsp;parar.</span>
       </h2>
 
       <div className="mt-14 flex flex-wrap justify-center gap-5 max-w-5xl mx-auto">

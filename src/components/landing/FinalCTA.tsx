@@ -4,13 +4,13 @@ const FinalCTA = () => (
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[hsl(var(--bg))]/40 pointer-events-none" />
     <div className="container relative py-12 sm:py-16 lg:py-24 text-center">
       <div className="max-w-[700px] mx-auto">
-        <h2 className="font-display text-[38px] sm:text-6xl lg:text-7xl text-foreground leading-[0.95]">
-          Sua carreira muda quando <span className="text-gold-light">você decide mudar.</span>
+        <h2 className="font-display text-[38px] sm:text-6xl lg:text-7xl text-foreground leading-[0.95] text-balance">
+          Sua carreira muda quando <span className="text-gold-light">você decide&nbsp;mudar.</span>
         </h2>
         <p className="mt-6 sm:mt-8 text-sm sm:text-lg text-foreground/85 leading-relaxed">
           Mais de 30.000 profissionais já tomaram essa decisão com a Gemba Group.
           O próximo pode ser você. As vagas são limitadas — não deixe para amanhã
-          o que pode mudar hoje.
+          o que pode mudar&nbsp;hoje.
         </p>
         <a
           href="#pricing"

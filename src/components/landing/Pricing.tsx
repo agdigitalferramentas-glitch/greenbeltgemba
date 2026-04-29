@@ -2,13 +2,13 @@ import SectionLabel from "./SectionLabel";
 
 const includes = [
   { star: false, text: "8 módulos completos (Define, Measure, Analyse, Improve, Control + Lean + Ger. Projetos + Introdução)" },
-  { star: false, text: "72 horas de carga horária + 8 horas de coaching para certificação de projetos" },
-  { star: false, text: "Aulas ao vivo via Teams — terças e quintas, das 19:30 às 22:30" },
-  { star: false, text: "Início em 06/07/2026 · 100% online ao vivo" },
-  { star: false, text: "Projeto real aplicado na sua empresa" },
-  { star: false, text: "Banca de avaliação com consultor especializado" },
-  { star: true, text: "Certificação Internacional — Council for Six Sigma" },
-  { star: true, text: "Acesso à rede de +30.000 profissionais certificados" },
+  { star: false, text: "72 horas de carga horária + 8 horas de coaching para certificação de\u00A0projetos" },
+  { star: false, text: "Aulas ao vivo via Teams — terças e quintas, das 19:30 às\u00A022:30" },
+  { star: false, text: "Início em 06/07/2026 · 100% online ao\u00A0vivo" },
+  { star: false, text: "Projeto real aplicado na sua\u00A0empresa" },
+  { star: false, text: "Banca de avaliação com consultor\u00A0especializado" },
+  { star: true, text: "Certificação Internacional — Council for Six\u00A0Sigma" },
+  { star: true, text: "Acesso à rede de +30.000 profissionais\u00A0certificados" },
 ];
 
 const Pricing = () => (
@@ -17,8 +17,8 @@ const Pricing = () => (
     <div className="container relative py-10 sm:py-14 lg:py-20">
       <div className="text-center max-w-3xl mx-auto">
         <div className="inline-flex"><SectionLabel>Investimento</SectionLabel></div>
-        <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
-          Escolha a melhor forma de <span className="text-green-glow">começar agora.</span>
+        <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight text-balance">
+          Escolha a melhor forma de <span className="text-green-glow">começar&nbsp;agora.</span>
         </h2>
       </div>
 
