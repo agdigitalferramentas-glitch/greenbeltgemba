@@ -2,7 +2,6 @@ import SectionLabel from "./SectionLabel";
 
 const cards = [
   { badge: "1h / durante", title: "Mentoria durante o curso", text: "Sessões agendadas durante o treinamento para tirar dúvidas e orientar a aplicação das ferramentas no seu projeto." },
-  { badge: "2h / após", title: "Mentoria pós-formação", text: "Apoio especializado após o último dia de aula para finalizar e apresentar seu projeto com segurança e profundidade." },
   { badge: "✓ / banca", title: "Avaliação final com consultor", text: "Apresente seu projeto a um especialista, receba feedback profundo e conquiste sua certificação com confiança." },
 ];
 
