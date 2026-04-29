@@ -92,6 +92,9 @@
     @apply bg-background text-foreground font-body antialiased;
     font-feature-settings: "ss01", "cv11";
   }
+  h1, h2, h3, h4, h5, h6, blockquote {
+    text-wrap: balance;
+  }
   ::selection {
     background: hsl(var(--green-vibrant) / 0.35);
     color: hsl(var(--text-primary));
