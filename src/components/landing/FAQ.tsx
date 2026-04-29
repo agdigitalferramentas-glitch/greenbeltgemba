@@ -7,8 +7,8 @@ const faqs = [
     a: "Não. A formação começa do zero, cobrindo todos os fundamentos no Módulo 1. O único pré-requisito é estar trabalhando ou ter acesso a um processo real para desenvolver seu projeto aplicado.",
   },
   {
-    q: "As aulas ficam gravadas para revisão?",
-    a: "As aulas são realizadas ao vivo para maximizar o aprendizado e a interação. Verifique com a equipe Gemba Group sobre a política de gravações para revisão — basta entrar em contato pelo WhatsApp.",
+    q: "E se eu perder alguma aula ao vivo?",
+    a: "Você não será prejudicado. Todas as aulas ao vivo são gravadas e sobem para a nossa plataforma. Se houver imprevistos, você pode acessar e repor o conteúdo assistindo quantas vezes quiser, sem que isso coloque em risco a sua certificação final.",
   },
   {
     q: "A certificação é reconhecida internacionalmente?",
