@@ -50,7 +50,7 @@ const Hero = () => (
             A certificação que transforma profissionais em agentes de transformação
             com resultados mensuráveis. Domine o método utilizado pelas maiores
             empresas do mundo e destrave a promoção que tanto almeja ou uma mega
-            oportunidade em uma empresa que valorize seu conhecimento.
+            oportunidade em uma empresa que valorize seu&nbsp;conhecimento.
           </p>
 
           {/* CTAs */}
