@@ -2,7 +2,7 @@ import SectionLabel from "./SectionLabel";
 
 const items = [
   { icon: "🖥️", title: "100% Online ao Vivo", text: "Aulas interativas via Microsoft Teams. Sem gravar e assistir sozinho — você aprende, pergunta e aplica em tempo real." },
-  { icon: "📅", title: "Terças e Quintas", text: "Das 19h30 às 22:30 para você pode conciliar com sua rotina profissional sem abrir mão do seu desenvolvimento contínuo." },
+  { icon: "📅", title: "Terças e Quintas", text: "Das 19:30 às 22:30, com início em 06/07/2026. 72 horas de carga horária para você conciliar com sua rotina profissional sem abrir mão do seu desenvolvimento contínuo." },
   { icon: "🎓", title: "Certificação Internacional", text: "Credenciada pelo Council for Six Sigma. Reconhecida globalmente e aceita por multinacionais de todos os setores." },
   { icon: "🛠️", title: "Projeto Real Aplicado", text: "Você não apenas estuda — você conduz um projeto real dentro da sua empresa e apresenta para certificação." },
   { icon: "🔁", title: "Acesso às Gravações", text: "Perdeu algum encontro ao vivo? Sem problemas. Todas as aulas ficam disponíveis na nossa plataforma para você repor e assistir quantas vezes quiser, sem colocar a sua certificação em risco." },

@@ -2,9 +2,9 @@ import SectionLabel from "./SectionLabel";
 
 const includes = [
   { star: false, text: "8 módulos completos (Define, Measure, Analyse, Improve, Control + Lean + Ger. Projetos + Introdução)" },
-  { star: false, text: "Aulas ao vivo via Teams — terças e quintas, 19h30–22h30" },
-  { star: false, text: "1h de mentoria individual durante o curso" },
-  
+  { star: false, text: "72 horas de carga horária + 8 horas de coaching para certificação de projetos" },
+  { star: false, text: "Aulas ao vivo via Teams — terças e quintas, das 19:30 às 22:30" },
+  { star: false, text: "Início em 06/07/2026 · 100% online ao vivo" },
   { star: false, text: "Projeto real aplicado na sua empresa" },
   { star: false, text: "Banca de avaliação com consultor especializado" },
   { star: true, text: "Certificação Internacional — Council for Six Sigma" },
@@ -38,10 +38,17 @@ const Pricing = () => (
 
         {/* Price options */}
         <div className="px-5 sm:px-9 py-7 sm:py-8">
+          {/* Anchor price */}
+          <div className="mb-4 text-center sm:text-left">
+            <span className="text-xs sm:text-sm text-muted-foreground">De </span>
+            <span className="text-base sm:text-lg text-muted-foreground line-through decoration-2">R$ 4.997,00</span>
+            <span className="text-xs sm:text-sm text-muted-foreground"> por:</span>
+          </div>
+
           <div className="rounded-xl border border-green-vibrant/40 bg-green-vibrant/5 p-5 sm:p-6">
             <div className="flex items-start justify-between gap-3 flex-wrap">
               <div>
-                <div className="text-[11px] sm:text-xs uppercase tracking-wider text-green-glow font-bold">À vista — 5% de desconto</div>
+                <div className="text-[11px] sm:text-xs uppercase tracking-wider text-green-glow font-bold">À vista no Pix — 5% de desconto</div>
                 <div className="font-display text-[40px] sm:text-6xl text-foreground mt-1 leading-none">R$ 2.755<span className="text-xl sm:text-2xl text-muted-foreground">,00</span></div>
               </div>
               <div className="text-xs sm:text-sm text-muted-foreground sm:max-w-[200px] sm:text-right">
@@ -77,7 +84,7 @@ const Pricing = () => (
           </a>
 
           <div className="mt-5 sm:mt-6 text-center text-[11px] sm:text-xs text-muted-foreground tracking-wide leading-relaxed">
-            🔒 Ambiente seguro · Turma com vagas limitadas · Início em breve
+            🔒 Ambiente seguro · Turma com vagas limitadas · Início em 06/07/2026
           </div>
 
           {/* Divider */}
