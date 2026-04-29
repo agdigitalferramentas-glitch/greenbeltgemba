@@ -16,14 +16,14 @@ const Format = () => (
         Formato pensado para <span className="text-green-glow">quem não pode parar.</span>
       </h2>
 
-      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+      <div className="mt-14 flex flex-wrap justify-center gap-5 max-w-5xl mx-auto">
         {items.map((it) => (
           <div
             key={it.title}
-            className="hover-lift rounded-xl border border-border bg-card/40 p-7 text-center hover:border-green-vibrant/60"
+            className="hover-lift rounded-xl border border-border bg-card/40 p-6 text-center hover:border-green-vibrant/60 w-full sm:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)]"
           >
             <div className="text-4xl mb-4">{it.icon}</div>
-            <h3 className="font-display text-xl text-green-glow">{it.title}</h3>
+            <h3 className="font-display text-lg text-green-glow">{it.title}</h3>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{it.text}</p>
           </div>
         ))}
