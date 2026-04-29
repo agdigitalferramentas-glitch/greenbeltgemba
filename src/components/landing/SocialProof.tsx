@@ -1,5 +1,6 @@
 import SectionLabel from "./SectionLabel";
 import VideoLightbox from "@/components/VideoLightbox";
+import LogosMarquee from "./LogosMarquee";
 
 const videoTestimonials = [
   "wJQeUW8ZQQA",
@@ -41,6 +42,10 @@ const SocialProof = () => (
             <div className="mt-2 sm:mt-3 text-[10px] sm:text-sm text-muted-foreground uppercase tracking-wider leading-tight">{n.l}</div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-14 -mx-4 sm:-mx-6 lg:-mx-8">
+        <LogosMarquee />
       </div>
 
       <div className="mt-16">
