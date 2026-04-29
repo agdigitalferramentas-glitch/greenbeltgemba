@@ -5,6 +5,7 @@ import Promise from "@/components/landing/Promise";
 import Modules from "@/components/landing/Modules";
 import Personas from "@/components/landing/Personas";
 import SocialProof from "@/components/landing/SocialProof";
+import LogosMarquee from "@/components/landing/LogosMarquee";
 import Format from "@/components/landing/Format";
 import Mentorship from "@/components/landing/Mentorship";
 import Pricing from "@/components/landing/Pricing";
