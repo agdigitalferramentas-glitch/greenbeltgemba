@@ -76,6 +76,10 @@ const Pricing = () => (
             Garantir minha vaga agora →
           </a>
 
+          <div className="mt-5 sm:mt-6 text-center text-[11px] sm:text-xs text-muted-foreground tracking-wide leading-relaxed">
+            🔒 Ambiente seguro · Turma com vagas limitadas · Início em breve
+          </div>
+
           {/* Divider */}
           <div className="my-7 sm:my-8 h-px bg-border" />
 
@@ -89,9 +93,6 @@ const Pricing = () => (
             ))}
           </ul>
 
-          <div className="mt-5 sm:mt-6 text-center text-[11px] sm:text-xs text-muted-foreground tracking-wide leading-relaxed">
-            🔒 Ambiente seguro · Turma com vagas limitadas · Início em breve
-          </div>
         </div>
       </div>
     </div>
