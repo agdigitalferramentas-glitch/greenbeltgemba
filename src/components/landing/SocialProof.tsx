@@ -11,12 +11,12 @@ const videoTestimonials = [
 ];
 
 const numbers = [
-  { v: "+30k", l: "Profissionais capacitados em todo o Brasil" },
+  { v: "+30k", l: "Alunos capacitados presencialmente" },
   { v: "+1Bi", l: "Em ganhos gerados pelos nossos alunos" },
-  { v: "+1500", l: "Projetos Lean Six Sigma certificados" },
-  { v: "30x", l: "Média de retorno sobre o investimento" },
-  { v: "17 anos", l: "De liderança nacional em Lean Six Sigma" },
-  { v: "+1000", l: "Empresas atendidas em consultoria" },
+  { v: "+500", l: "Projetos de consultorias Lean & Six Sigma" },
+  { v: "30x", l: "Retorno médio gerado pelos projetos de melhoria durante a formação." },
+  { v: "17 anos", l: "Referência Nacional" },
+  { v: "+1000", l: "Empresas atendidas em consultoria e treinamentos." },
 ];
 
 const SocialProof = () => (
