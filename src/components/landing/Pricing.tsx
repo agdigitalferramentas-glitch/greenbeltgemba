@@ -4,7 +4,7 @@ const includes = [
   { star: false, text: "8 módulos completos (Define, Measure, Analyse, Improve, Control + Lean + Ger. Projetos + Introdução)" },
   { star: false, text: "Aulas ao vivo via Teams — terças e quintas, 19h30–22h30" },
   { star: false, text: "1h de mentoria individual durante o curso" },
-  { star: false, text: "2h de mentoria pós-formação para seu projeto" },
+  
   { star: false, text: "Projeto real aplicado na sua empresa" },
   { star: false, text: "Banca de avaliação com consultor especializado" },
   { star: true, text: "Certificação Internacional — Council for Six Sigma" },
