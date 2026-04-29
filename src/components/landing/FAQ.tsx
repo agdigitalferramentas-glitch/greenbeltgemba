@@ -16,11 +16,15 @@ const faqs = [
   },
   {
     q: "Qual é a carga horária total do curso?",
-    a: "O curso é conduzido às terças e quintas das 19h30 às 22h30 (3 horas por aula), com duração total que cobre os 8 módulos do programa DMAIC completo. A data de início e duração exatas são confirmadas no momento da matrícula.",
+    a: "São 72 horas de aulas ao vivo (terças e quintas, das 19:30 às 22:30) cobrindo os 8 módulos do programa DMAIC completo, somadas a 8 horas de coaching para certificação dos projetos após o término das aulas. O início da turma é em 06/07/2026.",
+  },
+  {
+    q: "Como funciona o coaching para certificação dos projetos?",
+    a: "Após a conclusão das aulas, você tem 8 horas de coaching dedicadas à certificação do seu projeto: 2 horas acontecem dentro do cronograma das aulas e as outras 6 horas são distribuídas em 3 encontros bimestrais de 2 horas cada, ao longo dos 6 meses seguintes ao encerramento da formação.",
   },
   {
     q: "Posso parcelar no cartão sem juros?",
-    a: "Sim. O parcelamento é em até 6x sem juros no cartão de crédito. O valor total é de R$ 2.900,00 (6 parcelas de R$ 483,33). Para quem preferir pagar à vista, há 5% de desconto, totalizando R$ 2.755,00.",
+    a: "Sim. O valor total é de R$ 2.900,00 e pode ser parcelado em até 6x sem juros no cartão de crédito (6 parcelas de R$ 483,33). Para quem preferir pagar à vista via Pix, há 5% de desconto, totalizando R$ 2.755,00.",
   },
   {
     q: "Como funciona o projeto aplicado para certificação?",

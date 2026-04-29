@@ -19,7 +19,7 @@ const FinalCTA = () => (
           Quero minha vaga agora
         </a>
         <div className="mt-5 sm:mt-6 text-[11px] sm:text-sm text-foreground/70 tracking-wide leading-relaxed">
-          Terças e quintas · 19h30–22h30 · Online ao vivo · Microsoft Teams
+          Início em 06/07/2026 · Terças e quintas · 19:30–22:30 · Online ao vivo via Microsoft Teams
         </div>
       </div>
     </div>
