@@ -68,16 +68,6 @@ const Pricing = () => (
             </div>
           </div>
 
-          {/* Includes */}
-          <ul className="mt-7 sm:mt-8 space-y-2.5 sm:space-y-3">
-            {includes.map((i) => (
-              <li key={i.text} className="flex items-start gap-3 text-[13px] sm:text-sm text-foreground/90 leading-relaxed">
-                <span className={`flex-shrink-0 ${i.star ? "text-gold" : "text-green-glow"}`}>{i.star ? "★" : "✓"}</span>
-                <span>{i.text}</span>
-              </li>
-            ))}
-          </ul>
-
           {/* CTA */}
           <a
             href="#"
@@ -85,6 +75,19 @@ const Pricing = () => (
           >
             Garantir minha vaga agora →
           </a>
+
+          {/* Divider */}
+          <div className="my-7 sm:my-8 h-px bg-border" />
+
+          {/* Includes */}
+          <ul className="space-y-2.5 sm:space-y-3">
+            {includes.map((i) => (
+              <li key={i.text} className="flex items-start gap-3 text-[13px] sm:text-sm text-foreground/90 leading-relaxed">
+                <span className={`flex-shrink-0 ${i.star ? "text-gold" : "text-green-glow"}`}>{i.star ? "★" : "✓"}</span>
+                <span>{i.text}</span>
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-5 sm:mt-6 text-center text-[11px] sm:text-xs text-muted-foreground tracking-wide leading-relaxed">
             🔒 Ambiente seguro · Turma com vagas limitadas · Início em breve
