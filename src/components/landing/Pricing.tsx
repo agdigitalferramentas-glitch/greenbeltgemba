@@ -70,7 +70,7 @@ const Pricing = () => (
 
           {/* CTA */}
           <a
-            href="#"
+            href="#pricing"
             className="btn-glow mt-7 sm:mt-8 flex items-center justify-center w-full px-3 sm:px-6 py-4 sm:py-5 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-sm sm:text-lg shadow-glow text-center leading-tight whitespace-normal break-words"
           >
             Garantir minha vaga agora →
