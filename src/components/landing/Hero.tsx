@@ -70,7 +70,7 @@ const Hero = () => (
         </div>
 
         {/* Right: product logo */}
-        <div className="md:col-span-5 lg:col-span-4 flex justify-center md:justify-end order-first md:order-last">
+        <div className="md:col-span-5 lg:col-span-4 flex justify-start md:justify-end order-first md:order-last">
           <img
             src={productLogo}
             alt="Selo da certificação Green Belt Lean Six Sigma — Gemba Group"
