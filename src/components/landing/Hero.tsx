@@ -47,9 +47,10 @@ const Hero = () => (
 
           {/* Subtitle */}
           <p className="mt-5 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed animate-fade-up">
-            A certificação que transforma profissionais em agentes de resultado.
-            Domine o método usado pelas maiores multinacionais do mundo e destrave
-            a promoção, o aumento ou o impacto que você merece.
+            A certificação que transforma profissionais em agentes de transformação
+            com resultados mensuráveis. Domine o método utilizado pelas maiores
+            empresas do mundo e destrave a promoção que tanto almeja ou uma mega
+            oportunidade em uma empresa que valorize seu conhecimento.
           </p>
 
           {/* CTAs */}
