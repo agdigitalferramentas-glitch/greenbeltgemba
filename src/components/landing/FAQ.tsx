@@ -40,8 +40,8 @@ const FAQ = () => {
       <div className="container py-10 sm:py-14 lg:py-20">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex"><SectionLabel>Perguntas frequentes</SectionLabel></div>
-          <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight">
-            Ainda tem dúvidas? <span className="text-green-glow">A gente responde.</span>
+          <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground leading-tight text-balance">
+            Ainda tem dúvidas? <span className="text-green-glow">A gente&nbsp;responde.</span>
           </h2>
         </div>
 

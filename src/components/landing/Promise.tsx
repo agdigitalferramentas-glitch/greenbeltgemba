@@ -4,8 +4,8 @@ const Promise = () => (
   <section className="bg-gradient-promise">
     <div className="container py-10 sm:py-14 lg:py-20">
       <div className="flex justify-center"><SectionLabel>A transformação que você vai viver</SectionLabel></div>
-      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight">
-        O <span className="text-green-glow">ponto de virada</span> da sua carreira começa aqui.
+      <h2 className="mt-4 font-display text-[34px] sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-center leading-tight text-balance">
+        O <span className="text-green-glow">ponto de virada</span> da sua carreira começa&nbsp;aqui.
       </h2>
 
       <div className="relative mt-10 sm:mt-14 max-w-4xl mx-auto">
@@ -15,7 +15,7 @@ const Promise = () => (
             Ao final da formação, você não será apenas mais um profissional com um certificado.
             Você será <strong className="not-italic font-semibold text-green-glow">a pessoa que resolve problemas que os outros não conseguem</strong>
             {" "}— com dados, método e clareza. A pessoa que gera economia real, lidera com autoridade e é disputada
-            pelas melhores empresas do Brasil e do mundo.
+            pelas melhores empresas do Brasil e do&nbsp;mundo.
           </blockquote>
         </div>
       </div>
