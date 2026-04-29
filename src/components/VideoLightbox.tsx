@@ -16,7 +16,7 @@ interface VideoLightboxProps {
  */
 const VideoLightbox = ({
   videoIds,
-  gridClassName = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6",
+  gridClassName = "flex flex-wrap justify-center gap-5 lg:gap-6 [&>*]:basis-full sm:[&>*]:basis-[calc((100%-1.25rem)/2)] lg:[&>*]:basis-[calc((100%-2*1.5rem)/3)]",
   cardClassName = "",
 }: VideoLightboxProps) => {
   const [activeId, setActiveId] = useState<string | null>(null);
