@@ -87,7 +87,9 @@ const Pricing = () => (
 
           {/* CTA */}
           <a
-            href="#pricing"
+            href="https://celcash.celcoin.com.br/landingpage8400068/green-belt/comprar/elite-green-belt-lean-eamp-six-sigma/2"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glow mt-3 sm:mt-4 flex items-center justify-center w-full px-3 sm:px-6 py-4 sm:py-5 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-sm sm:text-lg shadow-glow text-center leading-tight whitespace-normal break-words"
           >
             Garantir minha vaga agora →
