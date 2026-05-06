@@ -75,10 +75,20 @@ const Pricing = () => (
             </div>
           </div>
 
+          {/* Secondary CTA */}
+          <a
+            href="https://wa.me/5541987617531?text=Ol%C3%A1!%20Vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20a%20Certifica%C3%A7%C3%A3o%20Green%20Belt!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full px-3 sm:px-6 py-3 sm:py-4 rounded-md border border-green-vibrant/40 text-green-glow font-bold text-sm sm:text-base text-center leading-tight hover:bg-green-vibrant/10 transition-colors"
+          >
+            Falar com o comercial
+          </a>
+
           {/* CTA */}
           <a
             href="#pricing"
-            className="btn-glow mt-7 sm:mt-8 flex items-center justify-center w-full px-3 sm:px-6 py-4 sm:py-5 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-sm sm:text-lg shadow-glow text-center leading-tight whitespace-normal break-words"
+            className="btn-glow mt-3 sm:mt-4 flex items-center justify-center w-full px-3 sm:px-6 py-4 sm:py-5 rounded-md bg-green-vibrant text-[hsl(var(--green-deep))] font-bold text-sm sm:text-lg shadow-glow text-center leading-tight whitespace-normal break-words"
           >
             Garantir minha vaga agora →
           </a>
