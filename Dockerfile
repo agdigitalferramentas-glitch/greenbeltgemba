@@ -7,9 +7,11 @@ RUN npm install --legacy-peer-deps
 COPY . .
 ARG VITE_SUPABASE_URL
 ARG VITE_SUPABASE_ANON_KEY
+ARG VITE_SUPABASE_PUBLISHABLE_KEY
 ENV VITE_SUPABASE_URL=$VITE_SUPABASE_URL
 ENV VITE_SUPABASE_ANON_KEY=$VITE_SUPABASE_ANON_KEY
-RUN npm run build
+ENV VITE_SUPABASE_PUBLISHABLE_KEY=$VITE_SUPABASE_PUBLISHABLE_KEY
+RUN if [ -z "$VITE_SUPABASE_PUBLISHABLE_KEY" ]; then export VITE_SUPABASE_PUBLISHABLE_KEY="$VITE_SUPABASE_ANON_KEY"; fi && npm run build
 # Normaliza saída: se Lovable gerou dist/client, promove para dist/.
 RUN if [ -d dist/client ]; then rm -rf /tmp/_dist && mv dist /tmp/_dist && mv /tmp/_dist/client dist && rm -rf /tmp/_dist; fi
 
