@@ -1,4 +1,8 @@
+import { useEffect, useState } from "react";
 import SectionLabel from "./SectionLabel";
+
+const CHECKOUT_URL = "https://celcash.celcoin.com.br/landingpage8400068/green-belt/comprar/elite-green-belt-lean-eamp-six-sigma/2";
+const WEBHOOK_URL = "https://automacao.gembagroup.com.br/webhook/29448797-7eed-40a1-923a-70785ac16ab9";
 
 const includes = [
   { star: false, text: "8 módulos completos (Define, Measure, Analyse, Improve, Control + Lean + Ger. Projetos + Introdução)" },
@@ -11,7 +15,166 @@ const includes = [
   { star: true, text: "Acesso à rede de +30.000 profissionais\u00A0certificados" },
 ];
 
-const Pricing = () => (
+const formatPhoneBR = (value: string) => {
+  const digits = value.replace(/\D/g, "").slice(0, 11);
+  if (digits.length <= 2) return digits.length ? `(${digits}` : "";
+  if (digits.length <= 6) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+  if (digits.length <= 10) return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`;
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+};
+
+const PreCheckoutModal = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [errors, setErrors] = useState<{ nome?: string; email?: string; telefone?: string }>({});
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [open, onClose]);
+
+  if (!open) return null;
+
+  const validate = () => {
+    const e: typeof errors = {};
+    if (!nome.trim()) e.nome = "Informe seu nome";
+    if (!email.trim()) e.email = "Informe seu e-mail";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) e.email = "E-mail inválido";
+    const digits = telefone.replace(/\D/g, "");
+    if (!digits) e.telefone = "Informe seu telefone";
+    else if (digits.length < 10 || digits.length > 11) e.telefone = "Telefone inválido";
+    setErrors(e);
+    return Object.keys(e).length === 0;
+  };
+
+  const handleSubmit = (ev: React.FormEvent) => {
+    ev.preventDefault();
+    if (!validate() || submitting) return;
+    setSubmitting(true);
+
+    // Fire-and-forget webhook to avoid UX latency
+    try {
+      fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          programa_elite: "Green Belt TD",
+          nome: nome.trim(),
+          telefone: telefone.trim(),
+          email: email.trim(),
+        }),
+        keepalive: true,
+      }).catch(() => {});
+    } catch { /* noop */ }
+
+    window.location.href = CHECKOUT_URL;
+  };
+
+  return (
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="precheckout-title"
+    >
+      <div
+        className="relative w-full max-w-md rounded-2xl bg-card border border-border shadow-deep p-6 sm:p-8"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Fechar"
+          className="absolute top-3 right-3 w-9 h-9 inline-flex items-center justify-center rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <div className="text-center mb-5">
+          <div className="text-[11px] tracking-[0.2em] uppercase text-green-glow font-bold">Falta pouco</div>
+          <h3 id="precheckout-title" className="mt-1 font-display text-2xl sm:text-3xl text-foreground leading-tight">
+            Garanta sua vaga
+          </h3>
+          <p className="mt-2 text-sm text-muted-foreground">Preencha seus dados para continuar com segurança.</p>
+        </div>
+
+        <form onSubmit={handleSubmit} noValidate className="space-y-4">
+          <div>
+            <label htmlFor="pc-nome" className="block text-xs font-bold uppercase tracking-wider text-foreground/80 mb-1.5">Nome completo</label>
+            <input
+              id="pc-nome"
+              type="text"
+              autoComplete="name"
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+              maxLength={120}
+              className="w-full h-11 px-3 rounded-md bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-green-glow focus:border-transparent"
+              placeholder="Seu nome"
+            />
+            {errors.nome && <p className="mt-1 text-xs text-destructive">{errors.nome}</p>}
+          </div>
+
+          <div>
+            <label htmlFor="pc-email" className="block text-xs font-bold uppercase tracking-wider text-foreground/80 mb-1.5">E-mail</label>
+            <input
+              id="pc-email"
+              type="email"
+              autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              maxLength={255}
+              className="w-full h-11 px-3 rounded-md bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-green-glow focus:border-transparent"
+              placeholder="voce@email.com"
+            />
+            {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
+          </div>
+
+          <div>
+            <label htmlFor="pc-tel" className="block text-xs font-bold uppercase tracking-wider text-foreground/80 mb-1.5">Telefone (WhatsApp)</label>
+            <input
+              id="pc-tel"
+              type="tel"
+              inputMode="tel"
+              autoComplete="tel"
+              value={telefone}
+              onChange={(e) => setTelefone(formatPhoneBR(e.target.value))}
+              placeholder="(11) 98765-4321"
+              className="w-full h-11 px-3 rounded-md bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-green-glow focus:border-transparent"
+            />
+            {errors.telefone && <p className="mt-1 text-xs text-destructive">{errors.telefone}</p>}
+          </div>
+
+          <button
+            type="submit"
+            disabled={submitting}
+            className="btn-glow mt-2 flex items-center justify-center w-full px-4 py-4 rounded-md bg-gold text-[hsl(var(--green-deep))] font-bold text-base shadow-glow hover:bg-gold-light transition-colors disabled:opacity-70"
+          >
+            {submitting ? "Redirecionando..." : "Continuar para o Checkout →"}
+          </button>
+
+          <p className="text-center text-[11px] text-muted-foreground leading-relaxed">
+            🔒 Seus dados estão seguros e serão usados apenas para sua inscrição.
+          </p>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+const Pricing = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  return (
   <section id="pricing" className="relative overflow-hidden bg-gradient-pricing">
     <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
     <div className="container relative py-10 sm:py-14 lg:py-20">
@@ -92,14 +255,13 @@ const Pricing = () => (
           </a>
 
           {/* CTA */}
-          <a
-            href="https://celcash.celcoin.com.br/landingpage8400068/green-belt/comprar/elite-green-belt-lean-eamp-six-sigma/2"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={() => setModalOpen(true)}
             className="btn-glow mt-3 sm:mt-4 flex items-center justify-center w-full px-3 sm:px-6 py-4 sm:py-5 rounded-md bg-gold text-[hsl(var(--green-deep))] font-bold text-sm sm:text-lg shadow-glow text-center leading-tight whitespace-normal break-words hover:bg-gold-light"
           >
             Garantir minha vaga agora →
-          </a>
+          </button>
 
           <div className="mt-5 sm:mt-6 text-center text-[11px] sm:text-xs text-muted-foreground tracking-wide leading-relaxed">
             🔒 Ambiente seguro · Turma com vagas limitadas · Início em 06/07/2026
@@ -121,7 +283,10 @@ const Pricing = () => (
         </div>
       </div>
     </div>
+
+    <PreCheckoutModal open={modalOpen} onClose={() => setModalOpen(false)} />
   </section>
-);
+  );
+};
 
 export default Pricing;
